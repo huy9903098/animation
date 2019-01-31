@@ -37,25 +37,269 @@
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="carrent.html"
               >Reservation <span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Deals</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Car&Service</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="special.html">Deals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="location.html">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vehicle.html">Vehicle</a>
+          </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+          <button
+            class="btn btn-secondary my-2 my-sm-0"
+            type="submit"
+            id="submit"
+            onclick="signinpop()"
+          >
             Log In
           </button>
         </form>
       </div>
     </nav>
+    <div id="bg-modal">
+      <div class="modal-content">
+        <div class="close">x</div>
+        <h4><b>Sign In</b></h4>
+        <form action="">
+          <input
+            type="email"
+            class="form-control login"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <input
+            type="email"
+            class="form-control login"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter password"
+          />
+          <a href=""><button class="select-button">Submit</button></a>
+        </form>
+        <p>Need an account <a href="">Sign up</a></p>
+      </div>
+    </div>
+
     <div class="parallax">
       <div class="home-box">
         <h1 class="intro-homepage"><b>BEST CAR RENTAL SITE IN THE WORLD</b></h1>
-        <div class="reserve-box">as</div>
+        <div class="reserve-box">
+          <div class="row">
+            <div class="input-place col-sm-6">
+              <input
+                type="email"
+                class="form-control "
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter a pick up location"
+              />
+            </div>
+
+            <div class="form-group col-sm-3">
+              <select class="form-control" id="exampleSelect1">
+                <option>January</option>
+                <option>Feburary</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>Jung</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-3">
+              <select class="form-control" id="exampleSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-place col-sm-6">
+              <input
+                type="email"
+                class="form-control "
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter a pick up location"
+              />
+            </div>
+
+            <div class="form-group col-sm-3">
+              <select class="form-control" id="exampleSelect1">
+                <option>January</option>
+                <option>Feburary</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>Jung</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-3">
+              <select class="form-control" id="exampleSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+            </div>
+          </div>
+          <div class="row button-place">
+            <a href="reservation.html"
+              ><button class="search-custom btn btn-primary btn-rounded">
+                <b>SEARCH</b>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- end reserve-box -->
+      </div>
+    </div>
+    <div class="container special-form ">
+      <h1 class="special-color">Special Offer</h1>
+      <div class="discount-offer ">
+        <div class="row ">
+          <div class="col-sm-6 big-div">
+            <div class="big-word">
+              <h1>Hey, It's New Years</h1>
+              <h1>Here is a 50% discount</h1>
+              <h1>This is a one in a lifetime oppurtunities</h1>
+              <a href="#">
+                <button class="book-call"><b>BOOK NOW</b></button>
+              </a>
+            </div>
+
+            <img
+              src="https://thornews.files.wordpress.com/2012/03/beautiful-roads-award-2011-1.jpg?w=700&h=425"
+              class="discount-big"
+            />
+          </div>
+
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6 small-div">
+                <div class="big-word">
+                  <h5>Hey, It's New Years</h5>
+                  <h5>Here is a 50% discount</h5>
+                  <button class="book-call"><b>BOOK NOW</b></button>
+                </div>
+                <img
+                  src="https://thornews.files.wordpress.com/2012/03/beautiful-roads-award-2011-1.jpg?w=700&h=425"
+                  class="discount-big"
+                />
+              </div>
+              <div class="col-sm-6 small-div">
+                <div class="big-word">
+                  <h5>Hey, It's New Years</h5>
+                  <h5>Here is a 50% discount</h5>
+                  <button class="book-call"><b>BOOK NOW</b></button>
+                </div>
+                <img
+                  src="https://thornews.files.wordpress.com/2012/03/beautiful-roads-award-2011-1.jpg?w=700&h=425"
+                  class="discount-big"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 small-div">
+                <div class="big-word">
+                  <h5>Hey, It's New Years</h5>
+                  <h5>Here is a 50% discount</h5>
+                  <button class="book-call"><b>BOOK NOW</b></button>
+                </div>
+                <img
+                  src="https://thornews.files.wordpress.com/2012/03/beautiful-roads-award-2011-1.jpg?w=700&h=425"
+                  class="discount-big"
+                />
+              </div>
+              <div class="col-sm-6 small-div">
+                <div class="big-word">
+                  <h5>Hey, It's New Years</h5>
+                  <h5>Here is a 50% discount</h5>
+                  <button class="book-call"><b>BOOK NOW</b></button>
+                </div>
+                <img
+                  src="https://thornews.files.wordpress.com/2012/03/beautiful-roads-award-2011-1.jpg?w=700&h=425"
+                  class="discount-big"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="footer">
@@ -96,6 +340,9 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
   </body>
 </html>
